@@ -34,6 +34,11 @@
                         Activity
                     </div>
                 </th>
+                <th style="min-width:10rem">
+                    <div class="flex justify-content-center align-items-center">
+                        Frequência(% de falta)
+                    </div>
+                </th>
                 <th style="width: 3rem">
                     <div class="flex justify-content-center align-items-center">
                         Situação
@@ -62,6 +67,9 @@
                 </td>
                 <td>
                     <p-progressBar [value]="grupo.unidadeCurricular.status" [showValue]="false"></p-progressBar>
+                </td>
+                <td>
+                    <p-progressBar [value]="10%" [showValue]="true"></p-progressBar>
                 </td>
                 <td class="text-center">
                     <i class="pi" [ngClass]="{'true-icon pi-check-circle': grupo.unidadeCurricular.status, 'false-icon pi-times-circle': !grupo.unidadeCurricular.status}"></i>
